@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/eLAmaravati/social-proof-section.io)
-- Live Site URL: [Add live site URL here](https://elamaravati.github.io/social-proof-section.io/)
+- Solution URL: [repo](https://github.com/eLAmaravati/social-proof-section.io)
+- Live Site URL: [demo](https://elamaravati.github.io/social-proof-section.io/)
 
 ## My process
 
@@ -75,11 +75,6 @@ main {
 ### Continued development
 
 Grid sangat membantu untuk membuat layout halaman web yang cukup kompleks. Tetapi, cukup rumit untuk diimplementasikan, terutama jika banyak elemen-elemen kecil di dalamnya. Pun, menghambat waktu development. Saya lebih suka menggunakan Bootsrap karena bukan hanya lebih mudah, tapi juga lebih cepat.
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
