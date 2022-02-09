@@ -1,0 +1,187 @@
+/*
+Project    : Social Proof Section Master
+URL        :
+Author     : Langit Amaravati
+Author URI : https://wwww.langitamaravati.com
+Version    : v.1.0.0
+*/
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+/* General CSS */
+body {
+  font-family: "Spartan", sans-serif;
+  background-image: url(/images/bg-pattern-top-desktop.svg),
+    url(/images/bg-pattern-bottom-desktop.svg);
+  background-position: left top, right bottom;
+  background-repeat: no-repeat, no-repeat;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4.5rem;
+  color: var(--dark-magenta);
+  margin-bottom: 0.5em;
+  word-wrap: break-word;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Root */
+:root {
+  --dark-magenta: hsl(300, 43%, 22%);
+  --gray-magenta: hsl(303, 10%, 53%);
+  --light-magenta: hsl(300, 24%, 96%);
+  --pink: hsl(333, 80%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    "header header header header empty rating rating rating rating"
+    "testimonyone testimonyone testimonyone testimonytwoo testimonytwoo testimonytwoo testimonythree testimonythree testimonythree";
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: auto;
+  padding: 10% 7%;
+  column-gap: 30px;
+  row-gap: 50px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.header-description {
+  color: var(--gray-magenta);
+}
+
+/* Rating */
+.rating {
+  grid-area: rating;
+}
+
+.rating-item {
+  background-color: var(--light-magenta);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.rating-item__content {
+  font-size: 15px;
+  color: var(--magenta);
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.rating-item:nth-child(3) {
+  margin-left: 30px;
+}
+
+.rating-item:nth-child(2) {
+  margin-right: 30px;
+  margin-left: -30px;
+}
+
+.rating-item:nth-child(1) {
+  margin-right: 60px;
+  margin-left: -60px;
+}
+
+/* Testimony */
+.testimony-one {
+  grid-area: testimonyone;
+}
+
+.testimony-twoo {
+  grid-area: testimonytwoo;
+  margin-bottom: -30px;
+  margin-top: 30px;
+}
+
+.testimony-three {
+  grid-area: testimonythree;
+  margin-top: 60px;
+  margin-bottom: -60px;
+}
+
+.testimony {
+  background-color: var(--dark-magenta);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.testimony-img {
+  flex-basis: 40%;
+  border-radius: 50%;
+}
+
+.testimony-name {
+  flex-basis: 55%;
+  padding-left: 20px;
+}
+
+.testimony-name p {
+  color: var(--pink);
+}
+
+.testimony-content {
+  padding-top: 20px;
+  flex-basis: 100%;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+
+/* Footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Responsive Breakpoint */
+@media screen and (max-width: 768px) {
+  main {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /* Rating */
+  .rating-item {
+    flex-direction: column;
+    margin: 0 0 30px !important;
+  }
+
+  .rating-item__icon {
+    padding-bottom: 10px;
+  }
+}
